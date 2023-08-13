@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>gruds</title>
+</head>
+<body>
+<div  id="icon">
+
+    <i  id="icon1"  onclick="clik()"  class="fa-solid fa-sun"></i>
+    <i   id="icon2"  onclick="cclik()"    class="fa-solid fa-moon"></i>
+</div>
+
+
+<div class="cruds">
+    <div class="head">
+        <h1>cruds</h1>
+        <p>product management system</p>
+        <!-- <button id="drak" >dark</button> -->
+        
+    </div>
+
+
+    <div class="inp">
+        <input type="text" placeholder="title" id="title" >
+        <div class="inpts">
+    <input onkeyup="gettotale()" type="number" id="price" placeholder="price">
+            <input onkeyup="gettotale()" type="number" id="taxes" placeholder="taxes">
+            <input  onkeyup="gettotale()"  type="number" id="ads" placeholder="ads">
+            <input   onkeyup="gettotale()"  type="number" id="discount" placeholder="discount">
+<small id="totale"></small>
+
+        </div>
+        <input type="number" id="count" placeholder="count" >
+        <input type="text" id="category" placeholder="category" >
+        <button id="great">greate</button>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="outp">
+        <input type="text"   onkeyup=" sechdata(this.value)"  id="search" placeholder="search">
+        <div class="btn">
+            <button onclick="serchmode(this.id)"id="serchbytitle" >search by title</button>
+            <button onclick="serchmode(this.id)"   id="serchbycategory">search by category</button>
+        </div>
+        <button id="delett"  onclick="deletall()">delet all()</button>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+               
+                
+               
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
